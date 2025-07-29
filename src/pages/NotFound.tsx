@@ -21,14 +21,6 @@ const NotFound = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-background via-background to-muted relative overflow-hidden animate-fade-in">
-      {/* Route Animation Overlay */}
-      <div className="absolute inset-0 z-50 pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent animate-[slide-in-right_2s_ease-in-out_infinite]"></div>
-        <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-l from-transparent via-accent to-transparent animate-[slide-in-right_2s_ease-in-out_infinite_reverse]"></div>
-        <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-transparent via-secondary to-transparent animate-[slide-in-right_3s_ease-in-out_infinite]" style={{ animationDelay: '0.5s' }}></div>
-        <div className="absolute right-0 bottom-0 w-1 h-full bg-gradient-to-t from-transparent via-primary to-transparent animate-[slide-in-right_3s_ease-in-out_infinite_reverse]" style={{ animationDelay: '1s' }}></div>
-      </div>
-
       {/* Animated Background */}
       <div className="absolute inset-0 z-0">
         {/* Floating geometric shapes with infinite loops */}
@@ -40,25 +32,6 @@ const NotFound = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="w-96 h-96 bg-gradient-to-r from-primary/20 via-accent/20 to-secondary/20 rounded-full animate-[spin_20s_linear_infinite] blur-3xl"></div>
         </div>
-        
-        {/* Animated route lines */}
-        <div className="absolute inset-0">
-          {Array.from({ length: 8 }).map((_, i) => (
-            <div
-              key={`route-line-${i}`}
-              className="absolute w-px h-20 bg-gradient-to-b from-transparent via-primary/30 to-transparent animate-[fade-in_2s_ease-in-out_infinite]"
-              style={{
-                top: `${10 + i * 10}%`,
-                left: `${5 + i * 12}%`,
-                animationDelay: `${i * 0.3}s`,
-                transform: `rotate(${i * 45}deg)`
-              }}
-            />
-          ))}
-        </div>
-        
-        {/* Grid pattern with pulsing animation */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:40px_40px] animate-[pulse_4s_ease-in-out_infinite]"></div>
       </div>
 
       {/* Main Content */}
@@ -75,17 +48,17 @@ const NotFound = () => {
           </div>
           
           <div className="space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Halaman Tidak Ditemukan
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-lg mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-lg mx-auto">
               Oops! Halaman yang Anda cari sepertinya telah tersesat di dimensi digital yang tidak dikenal.
             </p>
           </div>
         </div>
         
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             onClick={() => navigate("/")}
             size="lg"
@@ -93,7 +66,6 @@ const NotFound = () => {
           >
             🏠 Kembali ke Home
           </Button>
-
         </div>
       </div>
 
@@ -125,9 +97,6 @@ const NotFound = () => {
           />
         ))}
       </div>
-
-      {/* Bottom decorative line */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent animate-pulse"></div>
     </div>
   );
 };
