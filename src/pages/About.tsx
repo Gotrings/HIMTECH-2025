@@ -47,29 +47,6 @@ const About = () => {
     };
   }, []);
 
-  const teamMembers = [
-    {
-      name: "Alex Chen",
-      role: "President",
-      photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-    },
-    {
-      name: "Sarah Kim",
-      role: "Vice President",
-      photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-    },
-    {
-      name: "Michael Wong",
-      role: "Events Coordinator",
-      photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-    },
-    {
-      name: "Jessica Patel",
-      role: "Tech Lead",
-      photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-    }
-  ];
-
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -105,15 +82,15 @@ const About = () => {
                   <div>
                     <h2 className="text-3xl font-bold text-himtech-blue mb-4">Visi</h2>
                     <p className="text-himtech-gray text-justify">
-                      Menjadi wadah bagi mahasiswa Teknologi Rekayasa Perangkat Lunak untuk berkembang dan berkontribusi dalam bidang teknologi dan industri.
+                    Mewujudkan himpunan mahasiswa Teknologi Rekayasa Perangkat Lunak sebagai pusat kolaborasi dan pengembangan kompetensi, untuk menciptakan solusi digital yang berdampak positif bagi masyarakat dan industri.
                     </p>
                   </div>
                   <div>
                     <h2 className="text-3xl font-bold text-himtech-blue mb-4">Misi</h2>
                     <ul className="list-disc pl-6 space-y-3 text-himtech-gray">
-                      <li className="text-justify -ml-2 pl-2">Menyediakan forum bagi mahasiswa Teknologi Rekayasa Perangkat Lunak untuk berbagi pengalaman dan ilmu</li>
-                      <li className="text-justify -ml-2 pl-2">Mendorong mahasiswa untuk berpartisipasi dalam kegiatan-kegiatan kemahasiswaan kampus</li>
-                      <li className="text-justify -ml-2 pl-2">Mendorong mahasiswa untuk berpartisipasi dalam kegiatan-kegiatan yang berkaitan dengan Rekayasa Perangkat Lunak</li>
+                      <li className="text-justify -ml-2 pl-2">Menyediakan platform aktif bagi mahasiswa untuk berbagi pengetahuan, pengalaman, dan ide terkait dunia Rekayasa Perangkat Lunak.</li>
+                      <li className="text-justify -ml-2 pl-2">Menyelenggarakan pelatihan, workshop, dan seminar yang relevan dengan kebutuhan industri dan tren teknologi terkini.</li>
+                      <li className="text-justify -ml-2 pl-2">Menciptakan lingkungan yang mendorong inovasi dan kreativitas dalam pengembangan solusi digital.</li>
                       <li className="text-justify -ml-2 pl-2">Membantu mahasiswa mengembangkan keterampilan dan mempersiapkan mereka untuk masuk ke dunia kerja</li>
                       <li className="text-justify -ml-2 pl-2">Mewujudkan budaya inovasi dan kreativitas bagi mahasiswa Teknologi Rekayasa Perangkat Lunak</li>
                     </ul>
